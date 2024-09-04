@@ -12,6 +12,7 @@ use serde::Serialize;
 use serde_json::Value;
 use ureq::Response;
 
+#[derive(Clone)]
 /// Represents a Salesforce Client
 pub struct Client {
     http_client: ureq::Agent,
